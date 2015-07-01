@@ -1,5 +1,3 @@
-{
-    "lab": {
         "build_requirements": {
             "platform": {
                 "arch": "i386", 
@@ -53,7 +51,7 @@
                 "Chemical Sciences"
             ], 
             "id": "ccnsb01", 
-            "integration_level": 5, 
+            "integration_level": 6, 
             "name": "Molecular Fluorescence Spectroscopy", 
             "server-side": true, 
             "status": "Released", 
@@ -65,23 +63,17 @@
                 "hosting": "dedicated", 
                 "installer": ["sudo apt-get install -y php5 apache2"], 
                 "lab_actions": {
-                    "backup": [
-                    ], 
+                    "backup": [], 
                     "clean": [], 
                     "init": [
                         "mv /var/www/index.html index.html.default",
-                        "cp -r ../build/* /var/www/"                        
-                    ], 
+                        "cp -r ../build/* /var/www/"], 
                     "pause": [], 
                     "publish": [], 
                     "restore": [], 
                     "resume": [], 
-                    "shutdown": [
-                        "service apache2 stop"
-                    ], 
-                    "start": [
-                        "service apache2 start"
-                    ], 
+                    "shutdown": ["service apache2 stop"], 
+                    "start": ["service apache2 start"], 
                     "stats": [], 
                     "stop": []
                 }, 
